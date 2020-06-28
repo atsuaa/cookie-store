@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* .comment p{
+  border: 1px dashed purple;
+  padding: 4px;
+} */
+.syohin-info-box{margin: 40px 0; position: relative;}
+.box-right{width: 50% !important; position: absolute; right:0; top:0px;}
+.syohin-info {margin: 10px auto;}
+.syohin-info ul {list-style-type: none; padding-left: 5px;}
+.syohin-info li {border-bottom: 1px solid silver; margin: 5px auto;}
+
+thead {background-color: silver}
+
+.add-zairyo {display: flex; justify-content: center;}
+.add-zairyo select,input {
+  margin: 3px 5px;
+  flex: auto;
+}
+.add-zairyo select{height: 30px}
+
+.zairyo-table ul{padding: 0;}
+.zairyo-table li{
+  padding: 10px 0;
+  border-bottom: 2px dotted grey;
+  font-size: 20px;
+  font-weight: bold;
+  list-style-type: none;
+}
+.zai-box{
+  border-bottom: 1px solid silver;
+}
+.zai-box .p{
+  border: 1px dashed purple;
+  padding: 4px;
+  display: none;
+}
+.zai-box div{
+  margin: 2px 0;
+}
+.zai-box-t{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.zai-box-u{
+  width: 100%;
+  display: flex;
+}
+.zairyo-table .zai-name{
+  font-size: 20px;
+  flex: auto;
+}
+.zairyo-table .zai-date{
+  flex: initial;
+}
+.zai-amo{
+  flex: auto;
+}
+.zai-pri{
+  flex: auto;
+}
+.zai-box-u .val{
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+/* コメントボックス */
+.comment{
+  border: 1px solid purple;
+  position: relative;
+  margin: 2em 1em 1em;
+}
+.comment h3{
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -1.8em;
+}
+.comment span{
+  padding: 0 .5em;
+  color: purple;
+  background-color: #E7E7E7;
+}
+.comment p{
+  padding: 1.2em .5em .5em;
+}
+
+@media (max-width:767px) {
+  .content{
+    padding: 0 !important;
+  }
+  .card-body{
+    padding: 0 !important;
+  }
+  .disp-opt{
+    width: 100%;
+  }
+  .disp-opt .reset{
+    width: 50%;
+  }
+
+  .card{
+    margin: 20px auto;
+  }
+
+  #footer-search {
+    width: 100%;
+    height: 68px;
+    padding-top: 8px;
+    padding-left: 5px;
+    font-size: 20px;
+    background-color: #EEE;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+  }
+  #footer-search p{
+    margin: 0;
+  }
+  #footer-search input[type="text"]{
+    width: 60%;
+  }
+
+  .category-box{
+    min-height: 67px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid silver;
+  }
+  .category-title{
+    width: 20%;
+    height: 60px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: white;
+  }
+  #zairyo-body button, .syohin{
+    margin: 2px;
+    padding: 5px 8px;
+  }
+  footer{padding: 0 !important;}
+}
